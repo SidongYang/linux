@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config MINIX_FS_RUST
+	tristate "Rust implementation for Minix file system"
+	depends on BLOCK
+	depends on RUST
+	select BUFFER_HEAD
+	help
+	  Rust implementation for minix filesystem.
+
